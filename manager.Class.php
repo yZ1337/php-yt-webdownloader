@@ -1,18 +1,16 @@
-<!-- #login form made by tkz33 -->
+<!-- This file is made by: oVeXz
+Github: https://github.com/oVeXz 
+Feel free to use this, but please promote it when using it for your own projects!-->
 
-<!-- The compiled CSS file -->
-<link rel="stylesheet" href="css/production.css">
-<!-- Web fonts -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Source+Serif+Pro:700" rel="stylesheet"> 
-<!-- favicon.ico. Place these in the root directory. -->
-<link rel="shortcut icon" href="">
 <?php
 
+	// Include the connect.php script.
 	require_once 'connect.php';
 
-
-	class login{
-  
+	// Make class youtubeDownloader.
+	class youtubeDownloader{
+		
+		// Function getAllYtVids.
 		public function getAllYtVids() {
 			global $con;
 			$statement = $con->prepare("SELECT * FROM ytvids");
@@ -20,6 +18,7 @@
 			return $statement->fetchAll(PDO::FETCH_OBJ);
 		}
 
+		// Function addYtVideo.
 		public function addYtVideo($video_name, $video_link, $video_id){
 
 			global $con;
@@ -32,6 +31,7 @@
 			$statement->execute();
 		}
 
+		// Function getYtVidByLink.
 		public function getYtVidByLink($video_link){
 
 			global $con;
@@ -43,6 +43,7 @@
 			return $stmt ->fetch();
 		}
 
+		// Function getYtVidById.
 		public function getYtVidById($video_id){
 
 			global $con;
