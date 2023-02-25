@@ -40,7 +40,10 @@ Change the <USERNAME> and <PASSWORD> to your login credentials of your database.
 5. After this the installation should be finished!
 ## Screenshots
 
+  Screenshot without download button:
 ![Main screen](https://github.com/oVeXz/php-yt-webdownloader/blob/main/screenshots/1.png)
+  
+  Screenshot with download button:
 ![Screen with download button](https://github.com/oVeXz/php-yt-webdownloader/blob/main/screenshots/2.png)
 
 
