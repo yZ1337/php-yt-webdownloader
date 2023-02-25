@@ -26,7 +26,6 @@ python3 -m pip install pytube
 2. Import the SQL database from [here](https://github.com/oVeXz/php-yt-webdownloader/blob/main/sql/youtube-downloader.sql). 
 The colomns of the table:  
 | id  | video_name | video_link | video_id |
-| ----| -----------| -----------| ---------|
 
 3. Clone this github respo to your server.
 ```
