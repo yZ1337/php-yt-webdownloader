@@ -47,11 +47,14 @@ Change the USERNAME and PASSWORD to your login credentials of your database.
 ![Screen with download button](https://github.com/oVeXz/php-yt-webdownloader/blob/main/screenshots/2.png)
 
 
-
 ## To Do List:
 
-- [ ]  Make automatic .np4 file deletion
-- [ ]  Make it work for .mp3
+- [ ]  Make automatic .np4 file deletion.
+- [ ]  Make it work for .mp3.
+- [ ]  Get the IP from the downloader and UPDATE this into the database.
+- [ ]  Get the time of when the video is downloaded and UPDATE this into the database.
+
+
 ## Developers and maintainers
 
 - [@oVeXz](https://github.com/oVeXz)
