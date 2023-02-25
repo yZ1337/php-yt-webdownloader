@@ -33,9 +33,9 @@ git clone https://github.com/oVeXz/php-yt-webdownloader.git
 ```
 4. After this make sure to edit the [connect.php](https://github.com/oVeXz/php-yt-webdownloader/blob/main/connect.php) file on the following line:
 ```
-$con = new PDO('mysql:host=localhost;dbname=youtube-downloader', '<USERNAME>', '<PASSWORD>');
+$con = new PDO('mysql:host=localhost;dbname=youtube-downloader', 'USERNAME', 'PASSWORD');
 ```
-Change the <USERNAME> and <PASSWORD> to your login credentials of your database.
+Change the USERNAME and PASSWORD to your login credentials of your database.
 
 5. After this the installation should be finished!
 ## Screenshots
