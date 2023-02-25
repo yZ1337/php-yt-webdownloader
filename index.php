@@ -1,42 +1,22 @@
 <?php
+ini_set('display_errors', 1);
 include 'manager.Class.php';
 include 'includes.php';
 
 $realIP = $_SERVER['REMOTE_ADDR'];
 $currentDateTime = date('Y-m-d H:i:s');
 
-$user_id = substr(sha1(mt_rand()),25,30);
+$random_id = substr(sha1(mt_rand()),25,30);
 
-$ytviddir = 'ytvids/';
 
 $m = new login();
-$getAll = $m->getAll();
-// print_r($getAll);
-// $m->addFile("test", "1", 0, "475678345", "jhf7sdyf8934uf89");
-// Uploads files
+
 if (isset($_POST['generate'])) { // if save button on the form is clicked
     $video = $_POST['video'];
     $title = explode(' - YouTube',explode('</title>',explode('<title>',file_get_contents($video))[1])[0])[0];
-    // preg_replace('/\s+/', '%20', $title );
-    $m->addYtVideo($title, $video, $user_id);
-    header("location: ytvids/run?video_id=$user_id&&video_link=$video");
+    $m->addYtVideo($title, $video, $random_id);
+    header("location: scripts/run?video_id=$random_id&&video_link=$video");
 }
-
-// function scan_dir($dir) {
-//     $ignored = array('.', '..', '.svn', '.htaccess');
-
-//     $files = array();    
-//     foreach (scandir($dir) as $file) {
-//         if (in_array($file, $ignored)) continue;
-//         $files[$file] = filemtime($dir . '/' . $file);
-// }
-
-//     arsort($files);
-//     $files = array_keys($files);
-
-//     return ($files) ? $files : false;
-// }
-
 ?>
 
 <!doctype html>
@@ -74,12 +54,8 @@ if (isset($_POST['generate'])) { // if save button on the form is clicked
                         $video_link = $_GET['video_link'];
                         $video_id = $_GET['video_id'];
                         $all_yt_vids = $m->getAllYtVids();
-                        // $new_name = urldecode($name);
-                        // $new_title = str_replace("'", '', $new_name);
-                        // print_r(urldecode($new_title));
-                        // $name_video = $m->getYtVidByName($name);
-                        echo "<a class='btn btn--default' href='ytvids/$video_id.mp4'>Download file!</a>";
-                        // echo "<a class='btn btn--default' href='ytvids/$video_id.mp4'>Download file!</a>";
+                        echo "<a class='btn btn--default' href='download.php?video_id=$video_id'>Download file!</a>";
+                        // echo "<a class='btn btn--default' href='downloads/$video_id.mp4'>Download file!</a>";
                         
                     } else {
                     

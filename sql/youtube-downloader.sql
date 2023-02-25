@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 25, 2023 at 12:39 PM
+-- Generation Time: Feb 25, 2023 at 01:01 PM
 -- Server version: 8.0.31
 -- PHP Version: 7.4.3
 
@@ -19,8 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `file-management`
+-- Database: `youtube-downloader`
 --
+CREATE DATABASE IF NOT EXISTS `youtube-downloader` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `youtube-downloader`;
 
 -- --------------------------------------------------------
 
@@ -30,9 +32,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `ytvids` (
   `id` int NOT NULL,
-  `video_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `video_link` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `user_id` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
+  `video_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `video_link` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
