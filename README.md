@@ -49,7 +49,7 @@ Change the USERNAME and PASSWORD to your login credentials of your database.
 
 ## To Do List:
 
-- [ ]  Make automatic .np4 file deletion.
+- [ ]  Make automatic .mp4 file deletion in the Downloads folder, after a period of time.
 - [ ]  Make it work for .mp3.
 - [ ]  Get the IP from the downloader and UPDATE this into the database.
 - [ ]  Get the time of when the video is downloaded and UPDATE this into the database.
