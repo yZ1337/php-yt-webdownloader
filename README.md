@@ -40,7 +40,7 @@ Change the USERNAME and PASSWORD to your login credentials of your database.
 
 5. After this the installation should be finished!
 
-## Additional installation ()
+## Additional installation (Linux)
 
 When using this web application on a Linux based server, make sure to give permission to execute the Python script.
 Skip this part if you are not using Linux or have this already set!
