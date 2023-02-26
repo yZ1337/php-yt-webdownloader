@@ -1,5 +1,5 @@
 
-# php-yt-webdownloader
+# PHP/Python YouTube web application downloader
 
 Simple YouTube video downloader written in PHP, HTML and Python.
 
