@@ -62,6 +62,7 @@ if (isset($_POST['generate'])) {
                         $video_id = $_GET['video_id'];
                         // Download the file.
                         echo "<a class='btn btn--default' href='download.php?video_id=$video_id'>Download file!</a>";
+                        
                         // Uncommand the following echo line and command the line above^.
                         // To make the video been show in the browser.
                         // Instead of instant downloading.
