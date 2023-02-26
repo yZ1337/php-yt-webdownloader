@@ -32,11 +32,13 @@ The colomns of the table:
 ```
 git clone https://github.com/oVeXz/php-yt-webdownloader.git
 ```
+
 4. After this make sure to edit the [connect.php](https://github.com/oVeXz/php-yt-webdownloader/blob/main/connect.php) file on the following line:
 ```
 $con = new PDO('mysql:host=localhost;dbname=youtube-downloader', 'USERNAME', 'PASSWORD');
 ```
 Change the USERNAME and PASSWORD to your login credentials of your database.
+
 
 5. After this the installation should be finished!
 
@@ -51,19 +53,25 @@ To do this:
 ```
 usermod -a -G www-data (your-username)
 ```
+This group is run by apache2. If this group does not have rights to execute scripts. 
+Then the Python script will not work!
+
 2. Change the ownership of the folder:
 ```
 chown -R www-data:(your-username) path/to/php-yt-webdownloader/scripts
 ```
+
 3. Change the group of the file.
 ```
 cd path/to/php-yt-webdownloader/scripts
 chgrp www-data ytdownload.py
 ```
+
 4. Finally give permission to the file to be executed.
 ```
 chmod -R g+rx ytdownload.py
 ```
+
 g+rx: g=group, r=reabale and x=execute
 
 ## Screenshots
