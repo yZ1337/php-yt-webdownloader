@@ -39,6 +39,33 @@ $con = new PDO('mysql:host=localhost;dbname=youtube-downloader', 'USERNAME', 'PA
 Change the USERNAME and PASSWORD to your login credentials of your database.
 
 5. After this the installation should be finished!
+
+## Additional installation ()
+
+When using this web application on a Linux based server, make sure to give permission to execute the Python script.
+Skip this part if you are not using Linux or have this already set!
+
+To do this:
+
+1. Add yourself to the www-data group:
+```
+usermod -a -G www-data (your-username)
+```
+2. Change the ownership of the folder:
+```
+chown -R www-data:(your-username) path/to/php-yt-webdownloader/scripts
+```
+3. Change the group of the file.
+```
+cd path/to/php-yt-webdownloader/scripts
+chgrp www-data ytdownload.py
+```
+4. Finally give permission to the file to be executed.
+```
+chmod -R g+rx ytdownload.py
+```
+g+rx: g=group, r=reabale and x=execute
+
 ## Screenshots
 
   Screenshot without download button:
@@ -59,4 +86,3 @@ Change the USERNAME and PASSWORD to your login credentials of your database.
 ## Developers and maintainers
 
 - [@oVeXz](https://github.com/oVeXz)
-
