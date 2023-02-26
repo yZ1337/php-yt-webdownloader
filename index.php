@@ -4,7 +4,7 @@ Feel free to use this, but please promote it when using it for your own projects
 
 <?php
 
-// For debuging purpose to show errors:
+// For debugging purpose to show errors:
 // ini_set('display_errors', 1);
 
 // Include the value of the manager.Class.php.
