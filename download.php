@@ -21,7 +21,7 @@ if (isset($_GET['video_id'])) {
     // Fetch file to download from database.
     $filepath = 'downloads/' . $video['video_id'] . '.mp4';
 
-    // Checks if the filepath exists.
+    // Checks if the filepath exists and then downloads the file.
     if (file_exists($filepath)) {
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
