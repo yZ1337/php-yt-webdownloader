@@ -10,6 +10,3 @@ Feel free to use this, but please promote it when using it for your own projects
 
 <!-- favicon.ico. Place these in the root directory. -->
 <link rel="shortcut icon" href="favicon.ico">
-
-<!-- The compiled JavaScript file -->
-<script src="js/production.js"></script>
