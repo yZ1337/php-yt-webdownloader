@@ -3,10 +3,11 @@
 
 Simple YouTube video downloader written in PHP, HTML and Python.
 
-Created by: [oVeXz](https://github.com/oVeXz)
+Feel free to use, but when using it for your own projects please link this Github page!
 
 This page will show you how to install and use the program.
 
+Created by: [oVeXz](https://github.com/oVeXz)
 
 
 ## Documentation
