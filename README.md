@@ -16,6 +16,7 @@ Python dependencies needed:
 - [Pytube](https://github.com/pytube/pytube)
 
 For more information on Pytube and how to use it. Click the link.
+
 ## Installation
 
 1. Install Pytube, copy code below and paste in terminal:
