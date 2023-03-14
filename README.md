@@ -45,8 +45,8 @@ Change the USERNAME and PASSWORD to your login credentials of your database.
 
 ## Additional installation (Linux)
 
-When using this web application on a Linux based server, make sure to give permission to execute the Python script.
-Skip this part if you are not using Linux or have this already set!
+When using this web application on Apache, make sure to give permission to execute the Python script.
+Skip this part if you are not using Apache or have this already set!
 
 To do this:
 
