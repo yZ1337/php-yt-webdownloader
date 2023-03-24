@@ -39,7 +39,7 @@ $con = new PDO('mysql:host=localhost;dbname=youtube-downloader', 'USERNAME', 'PA
 ```
 Change the USERNAME and PASSWORD to your login credentials of your database.
 
-5. Install cronjob:
+5. Install cronjob for automatically deletion after 1 hour: 
 ```
 # Go to conjobs:
 $ crontab -e
@@ -93,7 +93,7 @@ g+rx: g=group, r=reabale and x=execute
 
 ## To Do List:
 
-- [ ]  Make automatic .mp4 file deletion in the Downloads folder, after a period of time.
+- [x]  Make automatic .mp4 file deletion in the Downloads folder, after a period of time.
 - [ ]  Make it work for .mp3.
 - [ ]  Get the IP from the downloader and UPDATE this into the database.
 - [ ]  Get the time of when the video is downloaded and UPDATE this into the database.
