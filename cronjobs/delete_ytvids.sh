@@ -1,3 +1,4 @@
 #!/bin/bash -x
-cd  /var/www/html/converter-webapplication/ytdownloader/
+# Place this outside the main folder
+cd  path/to/delete.php
 php delete.php
