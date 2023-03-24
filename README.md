@@ -27,21 +27,28 @@ python3 -m pip install pytube
 
 2. Import the SQL database from [here](https://github.com/oVeXz/php-yt-webdownloader/blob/main/sql/youtube-downloader.sql).
 The colomns of the table:  
-| id  | video_name | video_link | video_id |
+| id  | video_name | video_link | video_id | date |
 
 3. Clone this github respo to your server.
 ```
 git clone https://github.com/oVeXz/php-yt-webdownloader.git
 ```
-
-4. After this make sure to edit the [connect.php](https://github.com/oVeXz/php-yt-webdownloader/blob/main/connect.php) file on the following line:
+4. Make sure to edit the [connect.php](https://github.com/oVeXz/php-yt-webdownloader/blob/main/connect.php) file on the following line:
 ```
 $con = new PDO('mysql:host=localhost;dbname=youtube-downloader', 'USERNAME', 'PASSWORD');
 ```
 Change the USERNAME and PASSWORD to your login credentials of your database.
 
+5. Install cronjob:
+```
+# Go to conjobs:
+$ crontab -e
 
-5. After this the installation should be finished!
+# Add cronjob
+$ @hourly root /path/to/file/delete_ytvids.sh
+```
+
+6. After this the installation should be finished!
 
 ## Additional installation (Linux)
 
