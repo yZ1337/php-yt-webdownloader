@@ -48,6 +48,13 @@ $ crontab -e
 $ @hourly root /path/to/file/delete_ytvids.sh
 ```
 
+To change deletion time change the following code from [delete.php](https://github.com/oVeXz/php-yt-webdownloader/blob/main/delete.php)
+```
+# Change the hour to wathever you want, you can also change it to -1 day or -1 week, etc.
+12: if(strtotime($getAllYtVid->date) < strtotime('-1 hour')) {
+```
+
+
 6. After this the installation should be finished!
 
 ## Additional installation (Linux)
