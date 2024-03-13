@@ -1,4 +1,6 @@
 
+PLEASE DO NOT USE IN PUBLIC ENVIRONMENTS. THIS IS OUTDATED AND INSECURE!
+
 # PHP/Python YouTube web application downloader
 
 Simple YouTube video downloader written in PHP, HTML and Python.
