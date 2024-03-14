@@ -9,7 +9,7 @@ Feel free to use, but when using it for your own projects please link this Githu
 
 This page will show you how to install this web application.
 
-Created by: [@yZ]([[https://github.com/oVeXz])
+Created by: [@yZ](https://github.com/yZ1337)
 
 
 ## Documentation
@@ -33,7 +33,7 @@ The colomns of the table:
 
 3. Clone this github respo to your server.
 ```
-git clone https://github.com/oVeXz/php-yt-webdownloader.git
+git clone https://github.com/yZ1337/php-yt-webdownloader.git
 ```
 4. Make sure to edit the [connect.php](https://github.com/yZ1337/php-yt-webdownloader/blob/main/connect.php) file on the following line:
 ```
@@ -110,4 +110,4 @@ g+rx: g=group, r=reabale and x=execute
 
 ## Developers and maintainers
 
-- [@yZ]([[https://github.com/oVeXz])
+- [@yZ](https://github.com/yZ1337)
