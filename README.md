@@ -9,7 +9,7 @@ Feel free to use, but when using it for your own projects please link this Githu
 
 This page will show you how to install this web application.
 
-Created by: [oVeXz](https://github.com/oVeXz)
+Created by: [@yZ]([https://github.com/oVeXz](https://github.com/yZ1337))
 
 
 ## Documentation
@@ -110,4 +110,4 @@ g+rx: g=group, r=reabale and x=execute
 
 ## Developers and maintainers
 
-- [@oVeXz](https://github.com/oVeXz)
+- [@yZ]([https://github.com/oVeXz](https://github.com/yZ1337)https://github.com/yZ1337)
