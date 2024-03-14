@@ -27,7 +27,7 @@ For more information on Pytube and how to use it. Click the link.
 python3 -m pip install pytube
 ```
 
-2. Import the SQL database from [here](https://github.com/oVeXz/php-yt-webdownloader/blob/main/sql/youtube-downloader.sql).
+2. Import the SQL database from [here](https://github.com/yZ1337/php-yt-webdownloader/blob/main/sql/youtube-downloader.sql).
 The colomns of the table:  
 | id  | video_name | video_link | video_id | date |
 
@@ -35,7 +35,7 @@ The colomns of the table:
 ```
 git clone https://github.com/oVeXz/php-yt-webdownloader.git
 ```
-4. Make sure to edit the [connect.php](https://github.com/oVeXz/php-yt-webdownloader/blob/main/connect.php) file on the following line:
+4. Make sure to edit the [connect.php](https://github.com/yZ1337/php-yt-webdownloader/blob/main/connect.php) file on the following line:
 ```
 $con = new PDO('mysql:host=localhost;dbname=youtube-downloader', 'USERNAME', 'PASSWORD');
 ```
